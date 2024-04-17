@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="../styles/default.css">
+    <link rel="stylesheet" href="../styles/clientes.css">
     <title>Alugueis XPTO</title>
 </head>
 <body>
@@ -20,10 +21,25 @@
                 <li><button onclick="window.location.href='./veiculos.html'">Veiculos</button></li>
             </ul>
         </nav>
-        <section id="conteiner"><h1>Página Clientes</h1></section>
+        <section>
+            <table>
+                <thead>
+                    <tr>
+                        <th>CPF</th>
+                        <th>Nome</th>
+                        <th>Telefones</th>
+                        <th>Opções</th>
+                    </tr>
+                </thead>
+                <tbody id="container">
+                </tbody>
+            </table>
+        </section>
     </main>
     <footer>
         <p>Desenvolvido por: <a href="https://wellifabio.github.io" target="blanck">Wellington Fábio</a></p>
     </footer>
 </body>
+<script src="../scripts/api.js"></script>
+<script src="../scripts/clientes.js"></script>
 </html>
